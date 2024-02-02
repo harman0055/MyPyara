@@ -10,7 +10,7 @@
         android:id="@+id/textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Rose World"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.083"
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
-        android:text="Button"
+        android:text="Search"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -31,13 +31,86 @@
 
     <EditText
         android:id="@+id/myedittext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="443dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="145dp"
         android:ems="10"
         android:hint="@string/hinttext"
         android:inputType="text"
-        android:text="I'm an Edit Text"
-        tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="444dp" />
+        android:text="Search the flower type here!!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <CheckBox
+        android:id="@+id/checklist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="201dp"
+        android:layout_marginBottom="60dp"
+        android:text="CheckBox"
+        app:layout_constraintBottom_toTopOf="@+id/myedittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turnon" />
+
+    <RadioButton
+        android:id="@+id/radiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="392dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="3dp"
+        android:text="High to low prices"
+        app:layout_constraintBottom_toTopOf="@+id/myedittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checklist"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/turnon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="292dp"
+        android:layout_marginBottom="26dp"
+        android:text="show the newest"
+        app:layout_constraintBottom_toTopOf="@+id/checklist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="185dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pic11" />
+
+    <ImageView
+        android:id="@+id/picture01"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pic11" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

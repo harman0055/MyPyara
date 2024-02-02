@@ -8,15 +8,19 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.mypyara.databinding.ActivityMainBinding;
 
+public class MainActivity extends AppCompatActivity {
+    private ActivityMainBinding variableBinding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        EditText myedit=findViewById(R.id.myedittext);
-        Button mybutton=findViewById(R.id.mybutton);
-        TextView mytext= findViewById(R.id.textview);
+        variableBinding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(variableBinding.getRoot());
+        
+        EditText myedit = variableBinding.myedittext;
+        Button mybutton = variableBinding.mybutton;
+        TextView mytext = variableBinding.textview;
         mybutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
